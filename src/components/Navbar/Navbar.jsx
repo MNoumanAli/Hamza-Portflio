@@ -11,7 +11,7 @@ const Navbar = () => {
             <   p className="text-[22px] text-bold">Hamza Bashir</p>
             </span>
             <span className="w-[20%] flex justify-end items-center">
-                <p className="w-[150px] bg-[black] rounded-full p-[10px] text-[white] text-center">Let's Connect</p>
+                <p className="w-[150px] bg-[#F54035] rounded-full p-[10px] text-[white] text-center">Let's Connect</p>
             </span>
         </nav>
     )

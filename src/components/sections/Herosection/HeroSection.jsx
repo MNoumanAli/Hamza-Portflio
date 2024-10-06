@@ -14,7 +14,7 @@ const HeroSection = () => {
     }, []);
     const formattedDate = currentDate.format('MMMM, DD, YYYY')
     return (
-        <div className="flex justify-center flex-col items-center p-[15px]">
+        <div className="flex justify-center flex-col items-center">
             <Navbar/>
             <PhotoTag/>
             <div className = "w-[100%] flex justify-between items-center">
