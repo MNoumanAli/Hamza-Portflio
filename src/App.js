@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import Home from "./pages/Home/Home"
 import Navbar from "./components/Navbar/Navbar"
+import Work from "./pages/Work/Work"
 
 const App = () => {''
     const router = createBrowserRouter([
@@ -18,7 +19,7 @@ const App = () => {''
                 },
                 {
                     path : '/work',
-                    element : <div>Work</div>
+                    element : <Work/>
                 },
                 {
                     path : '/service',

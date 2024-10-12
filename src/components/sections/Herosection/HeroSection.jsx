@@ -1,6 +1,5 @@
 import {useState, useEffect} from 'react'
 import dayjs from 'dayjs'
-import Navbar from "../../Navbar/Navbar";
 import PhotoTag from "../../Phototag/PhotoTag";
 
 const HeroSection = () => {
@@ -15,8 +14,7 @@ const HeroSection = () => {
     const formattedDate = currentDate.format('MMMM, DD, YYYY')
     return (
         <div className="flex justify-center flex-col items-center pb-[25px]">
-            <span className="w-[100%] h-[80px]">sd</span>
-            <Navbar/>
+            <span className="w-[100%] h-[80px] block"></span>
             <PhotoTag/>
             <div className = "w-[100%] text-[#918888] text-[13px] flex justify-between items-center pl-[18px] pr-[18px]">
                 <p>{formattedDate}</p>
