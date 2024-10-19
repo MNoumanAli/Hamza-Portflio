@@ -10,7 +10,7 @@ const Navbar = () => {
                 <NavLink to='/about' className={({isActive}) => { return isActive ? 'text-[green]' : ''}}>About</NavLink>
             </span>
             <span className="w-[60%] flex justify-center items-center">
-            <   p className="text-[22px] font-bolder text-[#301D1D]">Hamza Bashir</p>
+            <   p className="font-montserrat text-[22px] font-bolder text-[#301D1D]">Hamza Bashir</p>
             </span>
             <span className="w-[20%] flex justify-end items-center">
                 <p className="w-[160px] bg-[#F54035] rounded-full p-[10px] text-[#ECE1E1] text-center text-[14px]">Let's Connect</p>

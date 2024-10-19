@@ -28,7 +28,7 @@ const Certificate = ({certificate, date, color}) => {
               ease: "easeInOut",
               delay: STAGGER * i,
             }}
-            className="inline-block text-[30px] md:text-[40px] sm:text-[35px] text-[#301D1D] font-extra-bold"
+            className="font-montserrat inline-block text-[30px] md:text-[40px] sm:text-[35px] text-[#301D1D] font-extra-bold"
             key={i}
           >
              {l === " " ? <span>&nbsp;</span> : l}
@@ -51,7 +51,7 @@ const Certificate = ({certificate, date, color}) => {
               ease: "easeInOut",
               delay: STAGGER * i,
             }}
-            className="inline-block text-[30px] md:text-[40px] sm:text-[35px] text-[#301D1D] font-extra-bold"
+            className="font-montserrat inline-block text-[30px] md:text-[40px] sm:text-[35px] text-[#301D1D] font-extra-bold"
             key={i}
           >
             {l === " " ? <span>&nbsp;</span> : l}
