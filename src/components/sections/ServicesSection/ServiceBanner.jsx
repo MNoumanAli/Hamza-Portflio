@@ -1,21 +1,23 @@
-import { useTransform, useScroll, motion} from "framer-motion";
-const ServiceBanner = () => {
-    const services = ["Digital Marketer" , "SEO" , "Social Media Handler"]
-    const repeatedServices = Array(20).fill(services).flat();
+import { FaArrowRight } from "react-icons/fa6";
 
-    const {scrollYProgress} = useScroll();
-    const x = useTransform(scrollYProgress, [0,1] , [0, -400])
+const ServiceBanner = () => {
+    const services = ["Digital Marketer" , "SEO" , "Social Media Handler","Digital Marketer" , "SEO" , "Social Media Handler",]
+    
     return (
-        <div className="overflow-hidden text-[white] w-[100%] h-[270px] bg-[black] flex items-center justify-center flex-col items-center">
+        
+        <div className="text-[white] w-[100%] h-[270px] bg-[black] flex items-center justify-center flex-col items-center">
             <p className="pb-[10px] text-[gray]">Services</p>
-            <div className="flex justify-center w-[100%]">
-                <motion.span style={{x}} className="flex MyGradient w-[100%] whitespace-nowrap">
-                    {
-                        repeatedServices.map((s,i) => {
-                            return <><p className="text-[30px] pl-[30px]" key={i}>{s}</p></>
-                        })
-                    }
-                </motion.span>
+            <div class="marquee h-[100px]">
+                <div class="track">
+                    <div class="content font-bold flex">
+                        {
+                            services.map((text,i) => {
+                                return <div key={i} className="ml-[30px] flex items-center justify-between"><FaArrowRight className="text-[45px] mr-[25px]"/> <span className="text-[60px]">{text}</span></div>
+                            })
+                        }
+                        
+                    </div>
+                </div>
             </div>
         </div>
     )
