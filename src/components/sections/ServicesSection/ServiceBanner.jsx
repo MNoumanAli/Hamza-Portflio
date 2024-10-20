@@ -5,9 +5,9 @@ const ServiceBanner = () => {
     
     return (
         
-        <div className="text-[white] w-[100%] h-[270px] bg-[black] flex items-center justify-center flex-col items-center">
+        <div className="text-[white] w-[100%] h-[270px] flex items-center justify-center flex-col items-center">
             <p className="pb-[10px] text-[gray]">Services</p>
-            <div class="marquee h-[100px]">
+            <div class="marquee h-[100px] MyGradient">
                 <div class="track">
                     <div class="content font-bold flex">
                         {
